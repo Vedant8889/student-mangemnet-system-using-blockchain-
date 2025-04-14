@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Blockchain</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #000;
+            margin: 0;
+            padding-top: 60px;
+            color: #f1f1f1;
+        }
+
+        .banner {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ), url('https://images.unsplash.com/photo-1614850523456-d8d4b7a0b7b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            padding: 40px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .block-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .block-card {
+            background: #1c1c1c;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 15px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+            transition: transform 0.3s ease;
+            color: #f5f5f5;
+        }
+
+        .block-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .block-title {
+            font-weight: 600;
+            color: #00d9ff;
+            margin-bottom: 10px;
+        }
+
+        .block-detail {
+            font-size: 14px;
+            color: #cccccc;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    📘 Student Blockchain Ledger
+</div>
+
+<div class="block-container">
+    {% for block in chain %}
+    <div class="block-card">
+        <div class="block-title">🧱 Block #{{ block.index }}</div>
+        <div class="block-detail"><strong>Student:</strong> {{ block.student_data }}</div>
+        <div class="block-detail"><strong>Hash:</strong> {{ block.hash[:20] }}...</div>
+        <div class="block-detail"><strong>Previous Hash:</strong> {{ block.previous_hash[:20] }}...</div>
+        <div class="block-detail"><strong>Timestamp:</strong> {{ block.timestamp }}</div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="text-center">
+    <a class="btn-back" href="/">← Back to Home</a>
+</div>
+
+<div class="footer">
+    &copy; 2025 Student Blockchain | Built with ❤️ using Flask
+</div>
+
+</body>
+</html>

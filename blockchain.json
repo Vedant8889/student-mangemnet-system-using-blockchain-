@@ -1,0 +1,93 @@
+[
+    {
+        "index": 1,
+        "timestamp": 1744051128.5500786,
+        "student_data": "Genesis Block",
+        "previous_hash": "0",
+        "hash": "4c68a0065243ab7a02f6f9ee2f465651de691a7e1a52dd0ab56c4519949fd2d5"
+    },
+    {
+        "index": 2,
+        "timestamp": 1744051143.1481917,
+        "student_data": {
+            "name": "vedant",
+            "roll": "betn1cs22058",
+            "course": "btech cs",
+            "marks": "52"
+        },
+        "previous_hash": "4c68a0065243ab7a02f6f9ee2f465651de691a7e1a52dd0ab56c4519949fd2d5",
+        "hash": "1118b5d8160cd5fb3d6d3799163dc64103c9bcd481f301a449d7e617865a6be4"
+    },
+    {
+        "index": 3,
+        "timestamp": 1744051635.5201445,
+        "student_data": {
+            "name": "pranav ",
+            "roll": "betn1cs22061",
+            "course": "btechcs",
+            "marks": "52"
+        },
+        "previous_hash": "1118b5d8160cd5fb3d6d3799163dc64103c9bcd481f301a449d7e617865a6be4",
+        "hash": "018323e6a13ff88232437b815224b9d2f77dcf5a9ecfab2e8486685dea2852c4"
+    },
+    {
+        "index": 4,
+        "timestamp": 1744051830.0018165,
+        "student_data": {
+            "name": "umang ",
+            "roll": "betn1cs22135",
+            "course": "btech cs",
+            "marks": "85"
+        },
+        "previous_hash": "018323e6a13ff88232437b815224b9d2f77dcf5a9ecfab2e8486685dea2852c4",
+        "hash": "a2733d07236d941405dbfd72daf4ea1f54b5f8a0e43bf786ea0f0fb8a7426e77"
+    },
+    {
+        "index": 5,
+        "timestamp": 1744051985.0449839,
+        "student_data": {
+            "name": "prashnt",
+            "roll": "betn1cs2205",
+            "course": "btech cs",
+            "marks": "54"
+        },
+        "previous_hash": "a2733d07236d941405dbfd72daf4ea1f54b5f8a0e43bf786ea0f0fb8a7426e77",
+        "hash": "ec29d4a9ff013eac669dc54baf75e9b738f2cf1a4caac51c3ed846c005610557"
+    },
+    {
+        "index": 6,
+        "timestamp": 1744052203.4628189,
+        "student_data": {
+            "name": "uday",
+            "roll": "betn1cs22032",
+            "course": "btech cs",
+            "marks": "57"
+        },
+        "previous_hash": "ec29d4a9ff013eac669dc54baf75e9b738f2cf1a4caac51c3ed846c005610557",
+        "hash": "8435d671d6b661ff71eb8d8377ecbeeb80e1759f78582a90358a71aa9d8a8b71"
+    },
+    {
+        "index": 7,
+        "timestamp": 1744608306.8672192,
+        "student_data": {
+            "name": "vedant Rajesh",
+            "roll": "betn1cs22058",
+            "course": "btech cs",
+            "marks": "96"
+        },
+        "previous_hash": "8435d671d6b661ff71eb8d8377ecbeeb80e1759f78582a90358a71aa9d8a8b71",
+        "hash": "d388eff91894b0fb56f892c2931fb7c1d5588c0761ea53822bb71768452507ef"
+    },
+    {
+        "index": 8,
+        "timestamp": 1744609223.7573366,
+        "student_data": {
+            "name": "vedant",
+            "roll": "betn1cs22061",
+            "course": "btechcs",
+            "marks": "58"
+        },
+        "previous_hash": "d388eff91894b0fb56f892c2931fb7c1d5588c0761ea53822bb71768452507ef",
+        "hash": "5f4e26ca1aa3ddebecc5a113fce36b8fb430f0ad8cb2673fa537a932233f4c6d"
+    }
+]

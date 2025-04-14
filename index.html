@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blockchain Student Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('/static/Responsive-Banner-2.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 500px;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .container h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 15px 30px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #00bcd4, #2196f3);
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 188, 212, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, #0097a7, #1976d2);
+            box-shadow: 0 10px 25px rgba(0, 150, 136, 0.5);
+        }
+
+        .btn i {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            .container h1 {
+                font-size: 2rem;
+            }
+
+            .btn {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Blockchain Student Management</h1>
+        <a href="/add" class="btn"><i class="fas fa-user-plus"></i> Add Student</a>
+        <a href="/chain" class="btn"><i class="fas fa-link"></i> View Blockchain</a>
+    </div>
+</body>
+</html>
